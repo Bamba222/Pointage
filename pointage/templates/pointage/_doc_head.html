@@ -1,0 +1,9 @@
+<table class="doc-head">
+  <tr>
+    <td class="logo" rowspan="{% if meta.code %}3{% else %}2{% endif %}">{% include "pointage/_logo.html" %}</td>
+    <td class="titre" rowspan="{% if meta.code %}3{% else %}2{% endif %}">{{ meta.titre }}</td>
+    {% if meta.code %}<td class="meta"><strong>{{ meta.code }}</strong></td></tr><tr>{% endif %}
+    <td class="meta">Version {{ meta.version }}</td>
+  </tr>
+  <tr><td class="meta">Date d'application :<br>{{ meta.date_application }}</td></tr>
+</table>
